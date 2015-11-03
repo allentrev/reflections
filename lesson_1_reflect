@@ -1,0 +1,9 @@
+Importance of using a file  nice to compare or difference application:
+
+fc old_file new_file
+
+diff -u old_file new_file
+
+Prefer the layout of the diff as it makes comparision easier to see where change is:
+
+Be nice to be abole to output changes so as to keep a log.
