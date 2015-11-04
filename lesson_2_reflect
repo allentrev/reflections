@@ -1,0 +1,57 @@
+well that was a lesson in saving. Seems I lost pretty much all my notes from yesterday
+
+git init
+
+git commit -m "message" or git commit takes you to default editor to enter message
+
+found I hadnt specified who i was so had
+
+git config -global -user.email "Allentrev88@gmail.com"
+git config --global -user.name "Allent"
+
+git add
+
+This is about the relationships between working directory + staging area + repository
+
+git 
+
+get diff id1 id2 to compare between two commits in repository
+
+get diff to show differences between working area and staging area
+
+get diff --staged to show diffwernces between staging area and head in repository
+
+git reset --hard tto get rid of any changes in working and staging area. BEWARE
+
+In repository the top one is the most recent
+
+BRANCHES
+ git branch without paramters will list out branches and show which is currently checked out with an asterisk
+
+git branch branch1 will create a branch named branch1. This will contain exactly the same files as in Master at this point
+
+git cheackout brnach1 will switch checkut to branch1 and indicate this as the checked out branch in got branch
+
+Remote branch means that its a branch created by xomeone elese
+
+git log --graph --oneline branch1 branch2 .....
+
+Merging a branch coins into the master
+
+1) make sure you are checked out on mastere
+2) git merge master coins
+
+
+git show commit1 shows the diff between a commit and its parent. If you do a git log after a merge, all commits are shown in timestamp sequence, so you can see what the parent of each commit is, so makes it difficult to see diff between 2 commits, as they could have come from differenct branches.
+
+Conflict detection
+
+The example given, is that want to keep the easy-mode branch, but to update it with the latest master following the merge of coins into master.
+
+git checkout easy-mode to set my head to easy-mode branch
+
+git merge master easy-mode to initiate merge. Will get an error warning that there are conflicts in game.js to be resolved. Command prompt shows "MERGING".
+
+Then looking inside game.js, basically indicates where the conflicts arise using <<<<<<<<<<<, ===========, >>>>>>>>>>> to split into 3 bits of code. !) is easy-mode changes, 2) is common ancestor 3) master
+
+
