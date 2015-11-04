@@ -1,0 +1,13 @@
+Lesson 3
+
+GitHub
+
+trevor ((f74d799...)) reflections $ git remote
+origin
+trevor ((f74d799...)) reflections $ git remote -v
+origin	https://github.com/allentrev/reflections.git (fetch)
+origin	https://github.com/allentrev/reflections.git (push)
+trevor ((f74d799...)) reflections $ 
+
+
+
